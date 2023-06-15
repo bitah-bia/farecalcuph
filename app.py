@@ -106,7 +106,7 @@ particulars = ["Grand Central Terminal", "Orchids", "Lucena City Diversion","Lic
 ### PLACES
 ### values = list(sample.values())
 
-st.subheader("Select fare type:")
+st.subheader("Select your fare type:")
 commuter = st.radio(
         "",
         ('Regular','Student/Senior Citizen/Persons with Disability'),
