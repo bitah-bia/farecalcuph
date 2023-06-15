@@ -21,7 +21,7 @@ with st.sidebar:
     st.markdown(
         f"""
         **Step 1.**
-        Select fare type.
+        Select your fare type.
         
         **Step 2.**
         Select your starting point and destination. Use the provided route map below as guide.
@@ -106,7 +106,7 @@ particulars = ["Grand Central Terminal", "Orchids", "Lucena City Diversion","Lic
 ### PLACES
 ### values = list(sample.values())
 
-st.subheader("Select your fare type:")
+st.subheader("Select fare type:")
 commuter = st.radio(
         "",
         ('Regular','Student/Senior Citizen/Persons with Disability'),
