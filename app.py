@@ -57,13 +57,13 @@ with st.sidebar:
     st.balloons()
 
 ### --- LOAD DATAFRAME
-excel_file = 'FARE_CALCU.xlsm'
-sheet_name = 'sample'
+### excel_file = 'FARE_CALCU.xlsm'
+### sheet_name = 'sample'
 
-df = pd.read_excel(excel_file,
-                   sheet_name=sheet_name,
-                   usecols='A:C',
-                   header=1)
+### df = pd.read_excel(excel_file,
+###                   sheet_name=sheet_name,
+###                   usecols='A:C',
+###                   header=1)
 
 ### st.dataframe(df)
 
