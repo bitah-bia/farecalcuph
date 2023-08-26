@@ -50,61 +50,14 @@ with st.sidebar:
     Send your feedback to:
     farecalculatorph@gmail.com
     
-    _by:_ GBM, 2023
+    _by:_ GBM, SLSU BSA Class of 2023
     """
     )
     
-    st.balloons()
 
-### --- LOAD DATAFRAME
-### excel_file = 'FARE_CALCU.xlsm'
-### sheet_name = 'sample'
-
-### df = pd.read_excel(excel_file,
-###                   sheet_name=sheet_name,
-###                   usecols='A:C',
-###                   header=1)
-
-### st.dataframe(df)
+### MAIN PAGE
 
 particulars = ["Grand Central Terminal", "Orchids", "Lucena City Diversion","Lic Manukan", "Boundary Gulang2", "United Church", "School Wakas", "Babuyan/Jesus Miracle Crusade", "By Pass Wakas", "Brgy Nangka/Obispo Hospital", "By Pass Baguio/Luis Palad/Ipilan/P. Paterno st. Tayabas", "Donya Carmen", "Mariposa", "Nawawalang Paraiso", "Dapdap", "Lanzonisan", "May it", "Ayos", "Tiawe", "M-Tanaw", "Batis Aramin", "Sindiko", "Tulay Digitel", "Lucban Terminal"]
-
-### start_clr, end_clr = st.select_slider("Select your destination:",
-###                                      options=particulars,
-###                                      value=("Orchids","Tulay Digitel"))
-### st.write('You chose:', start_clr, "to", end_clr)
-
-
-### sample = {"1":"Grand Central Terminal",
-###          "2":"Orchids",
-###          "3":"Lucena City Diversion",
-###          "4":"Lic Manukan",
-###          "5":"Boundary Gulang2",
-###          "6":"United Church",
-###          "7":"School Wakas",
-###          "8":"Babuyan/Jesus Miracle Crusade",
-###          "9":"By Pass Wakas",
-###          "10":"Brgy Nangka/Obispo Hospital",
-###          "11":"By Pass Baguio/Luis Palad/Ipilan/P. Paterno st. Tayabas",
-###          "12":"Donya Carmen",
-###          "13":"Mariposa",
-###         "14":"Nawawalang Paraiso",
-###          "15":"Dapdap",
-###          "16":"Lanzonisan",
-###          "17":"May it",
-###          "18":"Ayos",
-###          "19":"Tiawe",
-###          "20":"M-Tanaw",
-###         "21":"Batis Aramin",
-###          "22":"Sindiko",
-###          "23":"Tulay Digitel",
-###          "24":"Lucban Terminal"}
-
-### NUMBERS
-### keys = list(sample.keys())
-
-### PLACES
-### values = list(sample.values())
 
 st.subheader("Select fare type:")
 commuter = st.radio(
@@ -129,6 +82,7 @@ if commuter == 'Regular':
 ###    st.write(leaving_from)
     hm = 'Your fare is '
     cur = ' :blue[pesos] 🙌'
+
 
     
     if st.button('Calculate my fare'):
@@ -169,6 +123,8 @@ else:
         else:
             st.write("Please select your destination")
 
+st.balloons()
+
 ###st.divider()
 ###st.image("https://www.hino.com.ph/sites/default/files/styles/photo_gallery_380_x_285/public/lucban_genesis_transport_cooperative_7.jpg?itok=-P3FW507")
 ###st.subheader('Was the calculator helpful?')
@@ -178,23 +134,4 @@ else:
 ### col1.metric("Temperature", "70 °F", "1.2 °F")
 ### col2.metric("Wind", "9 mph", "-8%")
 ### col3.metric("Humidity", "86%", "4%")
-
-
-
-###col1, col2 = st.columns(2)
-
-### with col1:
-###    lf = st.radio(
-###    "What\'s your favorite movie genre",
-###    ["Grand Central Terminal", "Orchids", "Lucena City Diversion","Lic Manukan", "Boundary Gulang2", "United Church", "School Wakas", "Babuyan/Jesus Miracle Crusade", "By Pass Wakas", "Brgy Nangka/Obispo Hospital", "By Pass Baguio/Luis Palad/Ipilan/P. Paterno st. Tayabas", "Donya Carmen", "Mariposa", "Nawawalang Paraiso", "Dapdap", "Lanzonisan", "May it", "Ayos", "Tiawe", "M-Tanaw", "Batis Aramin", "Sindiko", "Tulay Digitel", "Lucban Terminal"],
-###        )
-###    st.write(lf)
-
-### with col2:
-###    lf2 = st.radio(
-###    "What\'s your  movie genre",
-###    ["Grand Central Terminal", "Orchids", "Lucena City Diversion","Lic Manukan", "Boundary Gulang2", "United Church", "School Wakas", "Babuyan/Jesus Miracle Crusade", "By Pass Wakas", "Brgy Nangka/Obispo Hospital", "By Pass Baguio/Luis Palad/Ipilan/P. Paterno st. Tayabas", "Donya Carmen", "Mariposa", "Nawawalang Paraiso", "Dapdap", "Lanzonisan", "May it", "Ayos", "Tiawe", "M-Tanaw", "Batis Aramin", "Sindiko", "Tulay Digitel", "Lucban Terminal"],
-###        )
-###    st.write(lf2)   
-
 
