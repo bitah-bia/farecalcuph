@@ -124,7 +124,7 @@ else:
         else:
             st.write("Please select your destination")
 
-st.balloons()
+
 
 ###st.divider()
 ###st.image("https://www.hino.com.ph/sites/default/files/styles/photo_gallery_380_x_285/public/lucban_genesis_transport_cooperative_7.jpg?itok=-P3FW507")
