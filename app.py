@@ -105,7 +105,7 @@ else:
     st.markdown("")
     st.image("https://github.com/bitah-bia/farecalcuph/blob/main/Line%20route%20Genesis-Blue.jpg?raw=true")
     st.subheader('You chose:')
-    st.write('', start_clr2, "**to**", end_clr2, ' - DISCOUNTED fare for Student/Senior Citizen/Persons with Disability')
+    st.write('', start_clr2, "**to**", end_clr2, ' - DISCOUNTED fare (Student/Senior Citizen/Persons with Disability)')
 
     going_to2 = particulars.index(end_clr2)
 ###    st.write(going_to2)
