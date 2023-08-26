@@ -9,7 +9,7 @@ st.set_page_config(
             initial_sidebar_state="expanded")
 st.title('Welcome to :blue[Fare Calculator PH]!👋')
 st.markdown("Our fare calculator website helps you know exactly how much fare to load onto your transit card*, saving you time, money, and hassle. Whether you're planning a trip, commuting, or simply curious about transportation costs from Lucena to Lucban (and vice versa), we've got you covered!")
-st.caption("* - currently in the Pilot Production Testing phase, as per DOTr")
+st.caption("$*$ currently in the Pilot Production Testing phase, as per DOTr")
 ### st.header('Fare Calculator')
 
 with st.sidebar:
